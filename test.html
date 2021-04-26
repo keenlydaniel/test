@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>实现固定表头和可排序</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		
+		<link type="text/css" href="./css/styles.css" media="all" rel="stylesheet" />
+		<link type="text/css" href="./css/stickysort.css" media="all" rel="stylesheet" />
+	</head>
+
+	<body style="height: 2000px;">
+
+		<section class="demo" id="basic">
+			<table>
+				<thead>
+					<tr>
+						<th>Avatar</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Contact</th>
+						<th>Location</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Avatar</th>
+						<th>Name</th>
+						<th>Email</th>
+						<th>Contact</th>
+						<th>Location</th>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+					<tr>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+						<td class="user-name">4</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+		<script type="text/javascript" src="js/jquery.stickysort.js"></script>
+		<script>
+			$(function() {
+				$('#basic table').stickySort();
+			});
+		</script>
+	</body>
+
+</html>

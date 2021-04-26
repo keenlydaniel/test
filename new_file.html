@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="banner">
+			<ul>
+				<li>1111</li>
+				<li>1111</li>
+				<li>1111</li>
+				<li>1111</li>
+				<li>1111</li>
+			</ul>
+		</div>
+		<button id="xianshi">隐藏</button>
+		<button id="yincang">显示</button>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript">
+	$(".banner ul li").hide();
+	$('#xianshi').hide();
+	
+	$('#yincang').click(function(){
+		$(".banner ul li").hide({ duration: 500}).siblings().show({ duration: 500});
+		$('#xianshi').show();
+		$('#yincang').hide();
+	})
+	$('#xianshi').click(function(){
+		$(".banner ul li").show({ duration: 500}).siblings().hide({ duration: 500});
+		$('#xianshi').hide();
+		$('#yincang').show();
+	})
+</script>
